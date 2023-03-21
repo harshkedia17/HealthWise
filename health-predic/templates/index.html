@@ -1,0 +1,351 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="hero_area">
+
+
+    <!-- slider section -->
+
+    <section class="slider_section">
+        <div class="slider_container">
+            <!-- <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+              01
+            </li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1">
+              02
+            </li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2">
+              03
+            </li>
+          </ol> -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="detail-box">
+                                    <h1>
+                                        The Power to Predict. The Hope to Prevent
+                                    </h1>
+                                    <!-- <a href="">
+                        Contact Us
+                      </a> -->
+                                </div>
+                            </div>
+                            <div class="col-md-6 px-0">
+                                <div class="img-box">
+                                    <img src="{% static 'images/1.jpg' %}" alt="" />
+                                </div>
+                            </div>
+                            <div class="col-md-6 px-0">
+                                <div class="click-box">
+                                    <h2>
+                                        PREDICT
+                                    </h2>
+                                    <p>
+                                        We believe that healthcare should be accessible to everyone, regardless of their
+                                        location or financial situation. We are committed to providing the highest
+                                        quality of care to all of our patients.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+</section>
+
+<!-- end slider section -->
+</div>
+<!-- end hero area -->
+
+<!-- service section -->
+
+<!-- <section class="service_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Ser<span>vi</span>ces
+        </h2>
+        <p>
+          adipiscingelit,sed do eiusmod tempor incididunt ut labore et dolore magn
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 ">
+          <div class="img-container tab-content">
+            <div class="img-box tab-pane fade show active" id="img1" role="tabpanel">
+              <img src="images/service-img.jpg" alt="" />
+            </div>
+            <div class="img-box tab-pane fade  " id="img2" role="tabpanel">
+              <img src="images/service-img.jpg" alt="" />
+            </div>
+            <div class="img-box tab-pane fade  " id="img3" role="tabpanel">
+              <img src="images/service-img.jpg" alt="" />
+            </div>
+            <div class="img-box tab-pane fade  " id="img4" role="tabpanel">
+              <img src="images/service-img.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="detail-container nav nav-tabs" id="myTab" role="tablist">
+            <div class="detail-box active" id="img1-tab" data-toggle="tab" href="#img1" role="tab" aria-selected="true">
+              <h4>
+                Website <br />
+                design
+              </h4>
+            </div>
+            <div class="detail-box" id="img2-tab" data-toggle="tab" href="#img2" role="tab" aria-selected="false">
+              <h4>
+                Logo <br />
+                design
+              </h4>
+            </div>
+            <div class="detail-box" id="img2-tab" data-toggle="tab" href="#img3" role="tab" aria-selected="false">
+              <h4>
+                brochure <br />
+                design
+              </h4>
+            </div>
+            <div class="detail-box" id="img2-tab" data-toggle="tab" href="#img4" role="tab" aria-selected="false">
+              <h4>
+                visiting card <br />
+                design
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="btn-box">
+        <a href="">
+          Read More
+        </a>
+      </div>
+    </div>
+  </section> -->
+
+<!-- about us -->
+
+<section class="about_section layout_padding">
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="heading_container about col-lg-7">
+                <h2>
+                    ABOUT US
+                </h2>
+                <br>
+                <p>
+                    At our healthcare platform, we believe that every individual has the right to access medical care
+                    that meets their unique needs. Whether you are in a remote area or a bustling city, we strive to
+                    provide you with top-notch healthcare services that are easily accessible and affordable.
+                    <br>
+                    <br>
+                    We understand that early detection and treatment are essential to maintaining optimal health, and we
+                    are dedicated to helping our patients stay healthy through regular check-ups, screenings, and
+                    preventative care. We believe that investing in your health is one of the best decisions you can
+                    make, and we're here to support you every step of the way.
+                    <br>
+                    <br>
+                    Our platform is designed to be user-friendly, with easy-to-navigate interfaces that enable you to
+                    schedule appointments, access your medical records, and connect with healthcare professionals from
+                    the comfort of your own home. Whether you are seeking routine care or specialized treatment, we
+                    offer a wide range of medical services, including consultations with licensed physicians, diagnostic
+                    tests, medication management, and ongoing care management.
+            </div>
+            <div class="about-img col-lg-5">
+                <img src="{% static 'images/juicy-medical-consultation.png' %}" alt="">
+            </div>
+        </div>
+    </div>
+    <hr>
+</section>
+
+<!-- end about us section -->
+
+<!-- services -->
+<section class="services-section">
+    <div class="services-div container">
+        <div class="heading_container align-items-center">
+            <h2>
+                SERVICES WE PROVIDE
+            </h2>
+        </div>
+        <a href="{% url 'appoint' %}"><div class="circle-content">
+            <div class="circle"></div>
+            <img src="{% static 'images/APPOINTMENT1.png' %}" alt="appoinment">
+            <p>Schedule Appointments</p>
+        </div></a>
+        <a href="{% url 'predict' %}">
+        <div class="circle-content">
+            <div class="circle"></div>
+            <img src="{% static 'images/DISEASES_PRED.png' %}" alt="appoinment">
+            <p>Disease Prediction</p>
+        </div></a>
+        <div class="circle-content">
+            <div class="circle"></div>
+            <img src="{% static 'images/ONLINE_CONSULTATION.png' %}" alt="appoinment">
+            <p>Online Consultation</p>
+        </div>
+    </div>
+</section>
+<!-- services -->
+
+<!-- doctors -->
+
+<div class="doctors responsive-container-block container">
+    <div class="heading_container align-items-center">
+        <h2>
+            THE DOCTORS
+        </h2>
+    </div>
+    <div class="responsive-container-block">
+        {% for doc in docs %}
+          
+        <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+            <div class="card">
+                <div class="team-image-wrapper">
+                    <img class="team-member-image"
+                    src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png">
+                </div>
+                <p class="text-blk name">
+                    {{doc.name}}
+                </p>
+                <p class="text-blk position">
+                    {{doc.specialization}}
+                </p>
+                <p class="text-blk feature-text">
+                    {{doc.qualification}} || {{doc.Medical_Council}}
+                </p>
+                <div class="social-icons">
+                    <a href="https://www.twitter.com" target="_blank">
+                        <img class="twitter-icon"
+                        src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg">
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img class="facebook-icon"
+                        src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg">
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        {% endfor %}
+
+
+    </div>
+</div>
+
+<!-- doctors -->
+
+<!-- TESTIMONIALS -->
+<section class="testimonial">
+    <div class="heading_container align-items-center">
+        <h2>
+            TESTIMONIALS
+        </h2>
+    </div>
+    <div class="outerdiv">
+        <div class="innerdiv">
+            <!-- div1 -->
+            <div class="div1 eachdiv">
+                <div class="userdetails">
+                    <div class="imgbox">
+                        <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-daniel.jpg"
+                            alt="">
+                    </div>
+                    <div class="detbox">
+                        <p class="name">Daniel Clifford</p>
+                        <p class="designation">Verified Graduate</p>
+                    </div>
+                </div>
+                <div class="review">
+                    <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero aperiam vitae eveniet.</h4>
+                    <p>“  We understand that early detection and treatment are essential to maintaining optimal health, and we
+                        are dedicated to helping our patients stay healthy through regular check-ups, screenings, and
+                        preventative care. We believe that investing in your health is one of the best decisions you can
+                        make, and we're here to support you every step of the way. ”</p>
+                </div>
+            </div>
+            <!-- div2 -->
+            <div class="div2 eachdiv">
+                <div class="userdetails">
+                    <div class="imgbox">
+                        <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-jonathan.jpg"
+                            alt="">
+                    </div>
+                    <div class="detbox">
+                        <p class="name">Jonathan Walters</p>
+                        <p class="designation">Verified Graduate</p>
+                    </div>
+                </div>
+                <div class="review">
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nam iure inventore at aliquid non perspiciatis reiciendis fuga quod. Harum aliquam eligendi id molestias dolore cumque animi officiis doloribus totam!</h4>
+                    <p>“  We understand that early detection and treatment are essential to maintaining optimal health, and we
+                        are dedicated to helping our patients stay healthy through regular check-ups, screenings, and
+                        preventative care. We believe that investing in your health is one of the best decisions you can
+                        make, and we're here to support you every step of the way.”</p>
+                </div>
+            </div>
+            <!-- div3 -->
+            <div class="div3 eachdiv">
+                <div class="userdetails">
+                    <div class="imgbox">
+                        <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-kira.jpg"
+                            alt="">
+                    </div>
+                    <div class="detbox">
+                        <p class="name dark">Kira Whittle</p>
+                        <p class="designation dark">Verified Graduate</p>
+                    </div>
+                </div>
+                <div class="review dark">
+                    <h4>Such a life-changing experience. Highly recommended!</h4>
+                    <p>“  We understand that early detection and treatment are essential to maintaining optimal health, and we
+                        are dedicated to helping our patients stay healthy through regular check-ups, screenings, and
+                        preventative care. We believe that investing in your health is one of the best decisions you can
+                        make, and we're here to support you every step of the way.”</p>
+                </div>
+            </div>
+            <!-- div4 -->
+            <div class="div4 eachdiv">
+                <div class="userdetails">
+                    <div class="imgbox">
+                        <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-jeanette.jpg"
+                            alt="">
+                    </div>
+                    <div class="detbox">
+                        <p class="name dark">Jeanette Harmon</p>
+                        <p class="designation dark">Verified Graduate</p>
+                    </div>
+                </div>
+                <div class="review dark">
+                    <h4>An overall wonderful and rewarding experience</h4>
+                    <p>“ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt quaerat molestias eveniet quod sit hic quidem velit voluptates, molestiae nostrum!”</p>
+                </div>
+            </div>
+            <!-- div5 -->
+            <div class="div5 eachdiv">
+                <div class="userdetails">
+                    <div class="imgbox">
+                        <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-patrick.jpg"
+                            alt="">
+                    </div>
+                    <div class="detbox">
+                        <p class="name">Patrick Abrams</p>
+                        <p class="designation">Verified Graduate</p>
+                    </div>
+                </div>
+                <div class="review">
+                    <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos assumenda ipsam aut unde numquam quod ullam veritatis consequatur quas. Tempore.</h4>
+                    <p>“ Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea beatae maxime adipisci magnam corporis. Tempore nobis consequatur quis magni? Quam exercitationem molestias provident, nam voluptatum vero qui distinctio maxime quo cumque iusto, quasi repellendus voluptatibus nisi, optio quod quaerat fugiat. ”</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}

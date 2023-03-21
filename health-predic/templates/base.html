@@ -1,0 +1,70 @@
+{% load static %}
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>
+    HealthWise | Get you diseases diagnosed and consulted
+  </title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,700&display=swap" rel="stylesheet" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
+  <link href="{% static 'css/prediction.css' %}" rel="stylesheet" />
+  
+  <!-- <link href="{% static 'css/navbar.css' %}" rel="stylesheet" /> -->
+  <!-- <link href="{% static 'css/style.scss' %}" rel="stylesheet" /> -->
+  <link rel="shortcut icon" href="{% static 'images/logo.png' %}" type="image/x-icon">
+</head>
+
+<body>
+
+<!-- header section strats -->
+{% include "includes/navbar.html" %}
+
+{% block content %}
+  
+{% endblock content %}
+<!-- end header section -->
+
+
+  
+  <!-- contact section -->
+
+
+  <!-- info section -->
+
+{% include "includes/footer.html" %}
+
+  <!-- end info section -->
+
+
+  <script type="text/javascript" src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <script type="text/javascript" src="{% static 'js/custom.js' %}"></script>
+  <script  src="{% static 'js/script.js' %}"></script>
+
+</body>
+
+</html>

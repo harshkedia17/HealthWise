@@ -1,0 +1,11 @@
+{% if messages %}
+
+{% for message in messages %}
+
+        {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}Error: {% endif %}
+        {{ message }}
+    </div>
+</div>
+{% endfor %}
+
+{% endif %}

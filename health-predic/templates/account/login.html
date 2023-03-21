@@ -1,0 +1,81 @@
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>healthwise.AI</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css'>
+    <link rel="stylesheet" href="{% static 'css/loginStyle.css' %}">
+</head>
+
+<!-- Animated Wave Background  -->
+<div class="ocean">
+    <div class="wave"></div>
+    <div class="wave"></div>
+</div>
+
+<body>
+    <header>
+        <a href="{% url 'home' %}">
+            <h2 class="logo">healthwise.AI</h2>
+        </a>
+    </header>
+    <section>
+        <div class="sign-up container" id="container">
+            <div class="form-container sign-up-container">
+                <form action="{% url 'home' %}" method="POST">
+                    {% csrf_token %}
+                    <h1>Login</h1>
+                    <br>
+                    <h6>You'll be Logged in as a Patient</h6>
+                    <label>
+                        <input type="text" placeholder="username" name="username" />
+                    </label>
+                    <label>
+                        <input type="password" placeholder="Password" />
+                    </label>
+                    <a href="{% url 'signup_patient' %}">Register as Patient first !</a>
+                    <button type="submit" style="margin-top: 9px">Patient Login</button>
+                </form>
+            </div>
+            <div class="form-container sign-in-container">
+                <form action="#">
+                    <h1>Login</h1><br>
+                    <h6>You'll be Logged in as a Doctor</h6><br>
+                    <label>
+                        <input type="email" placeholder="Email" />
+                    </label>
+                    <label>
+                        <input type="password" placeholder="Password" />
+                    </label>
+                    <a href="/RegisterDocPat.html">Register as Doctor First !</a>
+                    <button>Doctor Login</button>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Not A Patient?</h1>
+                        <p>Login as a Doctor Instead</p>
+                        <button class="ghost mt-5" id="signIn">Login Now</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>Not A Doctor?</h1>
+                        <p>Login as a Patient Instead</p>
+                        <button class="ghost" id="signUp">Login Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js'>
+
+    </script>
+    <!-- <script src="./js/loginJS.js"></script> -->
+    <script src="{% static 'js/script.js' %}"></script>
+
+</body>
+
+</html>
